@@ -1,0 +1,390 @@
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  border: 0;
+  outline: none;
+}
+body {
+  font-size: 62.5%;
+}
+
+/* App component */
+.app {
+  height: 100vh;
+  background: url("images/home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Home component */
+.home {
+  width: 60%;
+  height: auto;
+  background-color: white;
+  border: 0.1rem solid black;
+  padding: 2rem 1rem;
+  margin: 4rem auto;
+  box-shadow: 0.3rem 0.4rem 0.6rem 0.3rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home h4 {
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: 0.3rem;
+}
+.home form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.home form input {
+  border: 2px solid black;
+  width: 20rem;
+  margin-right: 0.2rem;
+  font-size: 1rem;
+  padding: 0.5rem 0.5rem;
+}
+.home form input::placeholder {
+  opacity: 0.5;
+}
+.home p {
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+.home button {
+  padding: 0.5rem 1rem;
+}
+
+/* Login signup*/
+
+.login form {
+  background-color: white;
+  padding: 2rem 2rem;
+  border-radius: 0.5rem;
+  margin: 4rem auto;
+  box-shadow: 0.3rem 0.4rem 0.6rem 0.3rem rgba(0, 0, 0, 0.2);
+}
+.signup form {
+  background-color: white;
+  padding: 2rem 2rem;
+  border-radius: 0.5rem;
+  margin: 4rem auto;
+  box-shadow: 0.3rem 0.4rem 0.6rem 0.3rem rgba(0, 0, 0, 0.2);
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus {
+  border-color: rgba(0, 0, 0, 0.075);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0 0 8px rgba(126, 239, 104, 0.6);
+  outline: 0 none;
+}
+input[type="radio"]:focus {
+  border: 0;
+  outline: 0 none;
+}
+.btn:focus {
+  box-shadow: none !important;
+  outline: 0;
+}
+.nav-item i {
+  margin-left: 900px;
+}
+
+@media (max-width: 768px) {
+  /* App component */
+  .app {
+    height: 150vh;
+  }
+  .home {
+    width: 90%;
+  }
+  .home h4 {
+    padding-top: 0.5rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+  }
+  .home form {
+    margin-bottom: 2rem;
+  }
+  .home form input {
+    width: 80%;
+    margin-right: 0.2rem;
+    padding: 0.3rem 0.3rem;
+  }
+  .home button.btn {
+    font-size: 1rem;
+    padding: 0.4rem 0.2rem !important;
+  }
+  .nav-item i {
+    margin-left: 0px;
+  }
+}
+
+/* Stream */
+.live-stream {
+  height: auto;
+  background-color: white;
+  box-shadow: 0.2rem 0.4rem 0.6rem 0.3rem rgba(0, 0, 0, 0.2);
+}
+.stream {
+  height: 30rem;
+}
+
+.bottom-div {
+  margin-top: -30px;
+}
+.bottom-div h5 {
+  padding-bottom: 10px;
+}
+.bottom-div h5 span {
+  color: #9146ff;
+}
+
+/* Bets */
+.bets {
+  height: 37.5rem;
+  background-color: white;
+  box-shadow: 0.2rem 0.4rem 0.6rem 0.3rem rgba(0, 0, 0, 0.2);
+  font-size: 0.8rem;
+  overflow-y: scroll;
+}
+.current-bet {
+  background-color: #ebebeb;
+  border: 1px solid black;
+  margin-bottom: 1rem;
+  padding: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  word-spacing: 0.2rem;
+}
+.first .one {
+  font-weight: bold;
+  margin-right: 2.6rem;
+}
+.first .two {
+  background-color: white;
+  border: 1px solid black;
+  padding: 0 0.3rem;
+}
+.second {
+  margin: 0.5rem 0;
+}
+.second .one,
+.two,
+.three {
+  margin-right: 1.5rem;
+}
+.second .four {
+  background-color: white;
+  border: 1px solid black;
+  padding: 0 0.5rem;
+}
+.third {
+  display: flex;
+}
+.third .one {
+  width: 9rem;
+  background-color: #94d895;
+  border: 1px solid black;
+}
+.third .two {
+  margin-left: 0.12rem;
+  background-color: white;
+  border: 1px solid black;
+  padding: 0 0.5rem;
+}
+.third .three {
+  margin-left: -1.4rem;
+  width: 9rem;
+  background-color: #d78282;
+  border: 1px solid black;
+}
+.third .four {
+  margin-right: 0.3rem;
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  padding: 0 0.6rem;
+}
+/* Bet form */
+.bet-form {
+  display: flex;
+  position: absolute;
+  top: 50px;
+  left: 180px;
+  padding: 10px 20px;
+  background-color: #fafafa;
+  border: 1px solid #6c757d;
+  box-shadow: 3px 3px 8px #949494;
+}
+
+.fa-times {
+  position: absolute;
+  font-size: 15px;
+  color: #6c757d;
+  margin-left: 220px;
+}
+
+.fheading {
+  font-weight: bolder;
+  font-family: "Inconsolata", monospace;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 5px;
+  font-size: 25px;
+  color: #6c757d;
+}
+
+.subhead {
+  font-weight: bolder;
+  font-family: "Inconsolata", monospace;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 17px;
+  color: #6c757d;
+}
+
+input[type="number"] {
+  border: 1px solid #6c757d;
+}
+
+/* ALert */
+
+.alert {
+  padding: 0.7rem;
+  margin: 1rem 0;
+  opacity: 0.9;
+  background: var(--light-color);
+  color: #333;
+}
+.alert-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+.alert-light {
+  background: var(--light-color);
+  color: #333;
+}
+.alert-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+.alert-danger {
+  background: var(--danger-color);
+  color: #fff;
+}
+.alert-success {
+  background: var(--success-color);
+  color: #fff;
+}
+.alert-white {
+  background: #fff;
+  color: #333;
+  border: #ccc solid 1px;
+}
+.nav-item {
+  font-size: 1rem;
+}
+.account {
+  margin: 0 auto;
+}
+.account .row {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.account-inner {
+  padding: 2rem 2rem;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0.3rem 0.4rem 0.6rem 0.3rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  margin: 4rem auto;
+}
+.account-email {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.account-email h4 {
+  text-align: center;
+}
+.account-name h4 {
+  text-align: center;
+}
+.account-name {
+  text-align: center;
+  margin: 10px;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .stream {
+    height: 35rem;
+  }
+  .bets {
+    height: 29rem;
+  }
+  .first .one {
+    margin-right: 1.6rem;
+  }
+  .second .one,
+  .two,
+  .three {
+    margin-right: 0.2rem;
+  }
+  .third .one {
+    width: 7rem;
+  }
+  .third .two {
+    margin-left: 0.6rem;
+    padding: 0 0.5rem;
+  }
+  .third .three {
+    margin-left: 0.01rem !important;
+    width: 7rem;
+  }
+
+  .Live {
+    top: 20px;
+    left: 20px;
+  }
+
+  .hide-sm {
+    display: none;
+  }
+
+  .account-email {
+    font-size: 1rem;
+  }
+  .account-name {
+    font-size: 1rem;
+  }
+  /* stream */
+  /* .ppv {
+    width: 400px;
+  } */
+  /* bet-form */
+  .bet-form {
+    margin-top: 70px;
+    margin-left: -120px;
+    padding: 5px 10px;
+  }
+  .ppv {
+    width: 50%;
+    height: 150px;
+  }
+  .bottom-div h5 {
+    font-size: 11px;
+  }
+}
